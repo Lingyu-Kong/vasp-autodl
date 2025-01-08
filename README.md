@@ -45,7 +45,7 @@ sudo make install
 
 这里需要确认libopenblas的位置，一般在指令所示位置，如果不放心可以先运行```apt list --installed | grep -i openblas```看一眼
 
-执行完毕后就手动编译安装了scalapack到```/usr/local/scalapack-mpich```。然后添加如下到```.bashrc```里面: ```export LD_LIBRARY_PATH=/usr/local/scalapack-mpich/lib:$LD_LIBRARY_PATH```
+执行完毕后就手动编译安装了scalapack到```/usr/local/scalapack-mpich```。然后添加如下到```.bashrc```里面: ```export LD_LIBRARY_PATH=/usr/local/scalapack-mpich/lib:$LD_LIBRARY_PATH```。添加完后重启shell
 
 ## 修改makefile.include修改链接改成mpich
 
